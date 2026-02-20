@@ -1,0 +1,18 @@
+{
+  "AUTH": {
+    "UNAUTHORIZED": "You are not authorized to access this resource.",
+    "AUTHENTICATION_REQUIRED": "Authentication required"
+  },
+  "RBAC": {
+    "AUTHENTICATION_REQUIRED": "Authentication required",
+    "USER_NOT_FOUND": "User not found",
+    "INSUFFICIENT_PERMISSIONS": "Insufficient permissions. Required: {permission}",
+    "INSUFFICIENT_ROLE": "Insufficient permissions. Required roles: {roles}"
+  },
+  "USERS": {
+    "NOT_FOUND": "User with ID {id} not found"
+  },
+  "PRODUCTS": {
+    "NOT_FOUND": "Product with ID {id} not found"
+  }
+}

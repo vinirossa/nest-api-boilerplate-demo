@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "prisma.prisma",
+    "42crunch.vscode-openapi",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client"
+  ]
+}

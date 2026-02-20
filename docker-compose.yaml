@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '8080:8080'
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/api_boilerplate
+      - DIRECT_URL=postgresql://postgres:postgres@postgres:5432/api_boilerplate
+      - REDIS_URL=redis://redis:6379
+      - BETTER_AUTH_SECRET=dev-secret-key-change-in-production
+      - BETTER_AUTH_URL=http://localhost:8080
+      - MAILER_API_KEY=
+      - MAILER_FROM_EMAIL=noreply@yourdomain.com
+      - MAILER_FROM_NAME=Your App Name
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:16-alpine
+    ports:
+      - '5433:5432'
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: api_boilerplate
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - '6379:6379'
+    restart: always
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:

@@ -1,0 +1,15 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@thallesp/nestjs-better-auth$": "<rootDir>/mocks/better-auth.mock.ts",
+    "^better-auth$": "<rootDir>/mocks/better-auth-core.mock.ts",
+    "^better-auth/(.*)$": "<rootDir>/mocks/better-auth-core.mock.ts",
+    "^@faker-js/faker$": "<rootDir>/mocks/faker.mock.ts"
+  }
+}

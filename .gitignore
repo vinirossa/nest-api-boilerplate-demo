@@ -1,0 +1,88 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build outputs
+dist
+build
+dist-ssr
+out
+.next
+*.tsbuildinfo
+storybook-static
+
+# Testing
+coverage
+.nyc_output
+
+# Environment files (keep example files)
+*.env*
+!.env.example
+
+# Database
+*.db
+*.db-journal
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Framework/tooling artifacts
+.turbo
+.vercel
+.sst
+.firebase
+.yarn
+
+# Git hooks (managed by Lefthook)
+.husky/
+
+# Docker volumes
+postgres_data
+redis_data
+
+# Prisma
+prisma/dev.db
+prisma/*.db
+
+# API Documentation (auto-generated)
+docs/swagger.json
+docs/collection.json
+!docs/.gitkeep
+
+# Deployment
+ngrok.yml
+
+# Local development
+.vercel
+
+# Temp files
+tmp/
+*.tmp
+*.bak
+*.swp
+*~

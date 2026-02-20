@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "assets": ["i18n/**/*"],
+    "watchAssets": false
+  },
+  "watchOptions": {
+    "watchAssets": false,
+    "poll": 1000,
+    "ignored": [
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/*.spec.ts",
+      "**/test/**",
+      "**/coverage/**",
+      "**/.next/**",
+      "**/docs/**",
+      "**/*.md"
+    ]
+  }
+}
