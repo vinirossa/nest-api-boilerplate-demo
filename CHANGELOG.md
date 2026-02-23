@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-22
+
+### Changed
+- **Prisma v6 → v7**: Migrated to Prisma 7 with the following breaking changes:
+  - Datasource URL moved from `prisma/schema.prisma` to `prisma.config.ts` (required by Prisma v7)
+  - `PrismaClient` now requires a driver adapter (`@prisma/adapter-pg`) — deprecated `datasourceUrl` constructor option removed
+  - `Decimal` is no longer a top-level export; use `Prisma.Decimal` from the `Prisma` namespace
+- **Redis cache store**: Replaced deprecated `cache-manager-redis-yet` with `@keyv/redis` (official replacement for `cache-manager` v7+)
+  - `CacheModule` updated to use the `stores: [new KeyvRedis(url)]` API
+- **Jest v29 → v30**: Updated `jest`, `@types/jest`, and `jest-mock-extended` to latest major versions
+- **`@types/node` v20 → v25**: Updated Node.js type definitions to v25
+- **`openapi-to-postmanv2`**: `ConvertResult` renamed to `CollectionResult` in the updated package
+
+### Added
+- `prisma.config.ts` at project root — required Prisma v7 configuration file for datasource URL and migration settings
+- `@prisma/adapter-pg` — PostgreSQL driver adapter required by Prisma v7
+- `@keyv/redis` — Redis store adapter for `cache-manager` v7+
+
+### Removed
+- `cache-manager-redis-yet` — deprecated; replaced by `@keyv/redis`
+
+---
+
 ## [1.0.0] - 2026-02-09
 
 ### Added

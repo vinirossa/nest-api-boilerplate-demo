@@ -4,7 +4,7 @@ import { INestApplication, Logger, ValidationPipe, VersioningType } from '@nestj
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, OpenAPIObject, SwaggerModule } from '@nestjs/swagger';
 import * as express from 'express';
-import { ConvertResult, convert } from 'openapi-to-postmanv2';
+import { type CollectionResult, convert } from 'openapi-to-postmanv2';
 import { AppModule } from './app.module';
 import { BETTER_AUTH_SWAGGER_PATHS } from './common/utils/better-auth-swagger';
 import configurations from './config/configurations';
@@ -153,7 +153,7 @@ function setupSwagger(app: INestApplication, config: Omit<OpenAPIObject, 'paths'
 
     // Generate Postman collection
     if (process.env.NODE_ENV !== 'production') {
-      convert({ type: 'string', data: documentString }, {}, (_: unknown, conversionResult: ConvertResult) => {
+      convert({ type: 'string', data: documentString }, {}, (_: unknown, conversionResult: CollectionResult) => {
         if (conversionResult.result) {
           const collection = conversionResult.output[0].data as PostmanCollection;
 
