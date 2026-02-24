@@ -1,4 +1,11 @@
+<!-- GITHUB TOPICS TO ADD IN REPO SETTINGS: nestjs, boilerplate, typescript, cqrs, rest-api, postgresql, prisma, redis, better-auth, backend, nodejs, clean-architecture -->
 <div align="center">
+
+> **⚠️ DEMO REPOSITORY — This is a read-only structural preview. The full source code, all modules, complete test suite, and documentation are available in the paid version.**
+>
+> **[💎 Get the Full Version →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+
+---
 
 # NestJS Ultimate Boilerplate
 
@@ -18,15 +25,10 @@
 
   <br/>
 
-  <strong>💎 Get Full Access</strong>
-  <br>
-  <sub>For complete access to this production-ready boilerplate, visit <a href="https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate">ch1efthedev.gumroad.com</a></sub>
-
-  <br/>
-
   <a href="#-why-this-boilerplate">Why This?</a> •
   <a href="#-perfect-for">Perfect For</a> •
   <a href="#-whats-included">What's Included</a> •
+  <a href="#-whats-not-in-this-demo">What's Locked</a> •
   <a href="#-preview">Preview</a> •
   <a href="#-quick-demo">Quick Demo</a> •
   <a href="#-quick-start">Quick Start</a> •
@@ -34,12 +36,6 @@
   <a href="#-support">Support</a>
 
 </div>
-
-> ### 🔍 Demo Preview Notes
-> This repository is a **structural showcase** to demonstrate the project's architecture and code quality.
-> - **Read-Only:** Core logic and automation scripts (like `pnpm bootstrap`) are excluded from this preview.
-> - **Engineering Audit:** Feel free to explore the CQRS patterns, SOLID principles, and testing structure.
-> - **Full Version:** The complete, runnable boilerplate with all 3,600+ lines of documentation is available at the link above.
 
 ---
 
@@ -74,6 +70,36 @@ This is a REST API boilerplate built on NestJS, with clean architecture, CQRS, a
 | Production Ready | ✅ Battle-Tested | ❌ Weeks | ⚠️ Maybe |
 
 **Time Saved:** ~60 hours of setup + endless debugging
+
+---
+
+## 🔒 What's NOT in This Demo
+
+This repo shows the **project structure and a few reference files** only. The following are **locked in the full version:**
+
+| | Demo | Full Version |
+|---|---|---|
+| Full source code | ❌ Structure only | ✅ Everything |
+| Auth module (Better Auth + RBAC) | ❌ Structure only | ✅ Complete |
+| CQRS implementation | ❌ Snippets only | ✅ Full handlers + events |
+| Redis caching with `@Cache()` decorator | ❌ | ✅ Ready to use |
+| 327 tests (unit + integration + E2E) | ❌ Examples only | ✅ 99%+ coverage |
+| i18n type-safe translation system | ❌ | ✅ Included |
+| 3,600+ lines of documentation | ❌ | ✅ Included |
+| Migration guide (new CQRS modules) | ❌ | ✅ Step-by-step |
+| Lifetime updates | ❌ | ✅ All future versions |
+
+<div align="center">
+
+### Ready to skip 60+ hours of setup?
+
+**[💎 Get the Full Version — $19 →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+
+<sub>One-time payment • Commercial license • Lifetime updates</sub>
+
+</div>
+
+---
 
 ## 👥 Perfect For
 
@@ -168,6 +194,14 @@ This is a REST API boilerplate built on NestJS, with clean architecture, CQRS, a
 </p>
 
 *99%+ test coverage with comprehensive unit and integration tests*
+
+<div align="center">
+
+**This is what you get on day one — no setup, no configuration headaches.**
+
+**[💎 Get the Full Version →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+
+</div>
 
 ---
 
@@ -620,14 +654,20 @@ A: PostgreSQL is configured, but Prisma supports MySQL, SQLite, etc.
 
 ---
 
-<p align="center">
-  <strong>Ready to build your API?</strong>
-  <br>
-  <code>pnpm bootstrap</code> and start coding in 5 minutes
-  <br><br>
-  <sub>Built with ❤️ using NestJS • If this helped you, give it a ⭐</sub>
-</p>
+<div align="center">
+
+## 💎 Get the Full Version
+
+Stop spending days on boilerplate. Start shipping features.
+
+**[→ Buy NestJS Ultimate Boilerplate — $19](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+
+<sub>One-time payment • Commercial license • Lifetime updates • Full source code</sub>
 
 ---
 
-**[⬆ Back to top](#nestjs-api-boilerplate)**
+<sub>Built with ❤️ using NestJS • If this demo helped you, give it a ⭐</sub>
+
+</div>
+
+**[⬆ Back to top](#nestjs-ultimate-boilerplate)**
