@@ -1,7 +1,7 @@
 <!-- GITHUB TOPICS TO ADD IN REPO SETTINGS: nestjs, boilerplate, typescript, cqrs, rest-api, postgresql, prisma, redis, better-auth, backend, nodejs, clean-architecture -->
 <div align="center">
 
-> **⚠️ DEMO REPOSITORY — This is a read-only structural preview. The full source code, all modules, complete test suite, and documentation are available in the complete version below.**
+> **⚠️ DEMO REPOSITORY — This is a read-only structural preview. The full source code, all modules, complete test suite, and documentation are available in the complete version.**
 >
 > **[💎 Get the Full Version →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
 
