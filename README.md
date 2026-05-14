@@ -93,7 +93,7 @@ This repo shows the **project structure and a few reference files** only. The fo
 
 ### Ready to skip 60+ hours of setup?
 
-**[💎 Get the Full Version — $19 →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+**[💎 Get the Full Version — $10 with PPP →](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
 
 <sub>One-time payment • Commercial license • Lifetime updates</sub>
 
@@ -660,7 +660,7 @@ A: PostgreSQL is configured, but Prisma supports MySQL, SQLite, etc.
 
 Stop spending days on boilerplate. Start shipping features.
 
-**[→ Buy NestJS Ultimate Boilerplate — $19](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
+**[→ Buy NestJS Ultimate Boilerplate — $10 with PPP](https://ch1efthedev.gumroad.com/l/nestjs-ultimate-boilerplate)**
 
 <sub>One-time payment • Commercial license • Lifetime updates • Full source code</sub>
 
